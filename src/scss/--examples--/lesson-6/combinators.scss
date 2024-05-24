@@ -1,0 +1,19 @@
+ul > {
+    li {
+        list-style: none;
+    }
+}
+
+h1 {
+    + p {
+font-size: 60px;
+    }
+}
+
+p {
+~ {
+        span {
+            opacity: 0.9;
+        }
+    }
+}

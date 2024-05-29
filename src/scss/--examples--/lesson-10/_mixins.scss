@@ -1,0 +1,56 @@
+// @mixin size($width, $height: $width) {
+//     width: $width;
+//     height: $height;
+// }
+
+// .avatar {
+//     @include size(150px);
+
+//     border-radius: 50%;  
+// }
+
+// Arguments //
+
+// @mixin position-center {
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate( -50%, -50%);
+// }
+
+// .decoration {
+//     @include position-center();
+// }
+
+// @mixin position($position-type, $positiox-y, $position-x, $offset-x, $offset-y) {
+//     position: $position-type;
+//     top: $positiox-y;
+//     left: $position-x;
+//     transform: translate($offset-x, $offset-y);
+// }
+
+// .decoration {
+//     @include position(absolute, 50%, 50%, -50%, -50%);
+// }
+
+@mixin position(
+    $layer-index,
+    $display,
+    // Обов'язковий параметер //
+ $position-type: absolute,
+  $positiox-y: 50%, 
+  $position-x: $positiox-y, 
+  $offset-x: $positiox-y, 
+  $offset-y: $positiox-y)
+   {
+    position: $position-type;
+    top: $positiox-y;
+    left: $position-x;
+    transform: translate(($offset-x * -1), ($offset-y * -1));
+    z-index: $layer-index;
+    display: $display;
+}
+
+.decoration {
+    @include position(100, block, $offset-y: 70%);
+}

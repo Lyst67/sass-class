@@ -1,0 +1,91 @@
+
+//Approach 1 //
+
+// .notification {
+//     display: flex;
+//     width: 480px;
+//     padding: 20px;
+// align-items: center;
+// justify-content: space-between;
+// border-radius: 6px;
+// color: azure;
+// background-color: gray;
+// font-size: 16px;
+// letter-spacing: normal;
+// margin: 20px auto;
+// font-family: Montserrat;
+// }
+// .notification-primary {
+// background-color: orange;
+// }
+// .notification-success {
+//     background-color: green;
+// }
+// .notification-info {
+//     background-color: blue;
+// }
+
+// Approach 2 //
+
+// .notification {
+//     display: flex;
+//     width: 480px;
+//     padding: 20px;
+//     align-items: center;
+//     justify-content: space-between;
+//     border-radius: 6px;
+//     color: azure;
+//     background-color: gray;
+//     font-size: 16px;
+//     letter-spacing: normal;
+//     margin: 20px auto;
+//     font-family: Montserrat;
+// }
+
+// .notification-primary {
+//     @extend .notification;
+//     background-color: orange;
+// }
+
+// .notification-success {
+//     @extend .notification;
+//     background-color: green;
+// }
+
+// .notification-info {
+//     @extend .notification;
+//     background-color: blue;
+// }
+
+// Approach 3 //
+// placeholder selector //
+
+%notification {
+    display: flex;
+    width: 480px;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 6px;
+    color: azure;
+    background-color: gray;
+    font-size: 16px;
+    letter-spacing: normal;
+    margin: 20px auto;
+    font-family: Montserrat;
+}
+
+.notification-primary {
+    @extend %notification;
+    background-color: orange;
+}
+
+.notification-success {
+    @extend %notification;
+    background-color: green;
+}
+
+.notification-info {
+    @extend %notification;
+    background-color: blue;
+}

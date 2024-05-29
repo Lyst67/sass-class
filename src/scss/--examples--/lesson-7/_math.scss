@@ -1,0 +1,35 @@
+
+/*  Матиматичні дії  */
+
+$value: 600px;
+
+.box {
+    width: 600px - 20px;
+    width: 600px + 50px;
+    width: 600px * 2;
+    width: (600px + 50px) * 2;
+
+    width: $value / 5;
+    width: (600px / 5);
+    width: 600px / 5px + 20px;
+
+    @debug (600px / 5px); //120
+    @debug (120 + 20px); //140px
+}
+
+/*  Інтерполяція  */
+
+$name: "box";
+$margin: 100px;
+
+.box {
+    margin: $margin * 2;
+    margin: 100px * 2;
+    margin: calc($margin * 2);
+
+    margin:  calc(#{$margin} * 2);
+}
+
+.#{$name} {
+    margin: $margin;
+}

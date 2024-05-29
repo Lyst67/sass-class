@@ -2,12 +2,17 @@
 // @use "base";
 // @use "layout";
 // @use "components";
+@use "utillites/reset";
 
 
 
 /*===END===*/
 
 // @use "--examples--/lesson-5/base";
-@use "--examples--/lesson-6/nesting";
-@use "--examples--/lesson-6/combinators";
-@use "--examples--/lesson-6/appersant"
+// @use "--examples--/lesson-6/nesting";
+// @use "--examples--/lesson-6/combinators";
+// @use "--examples--/lesson-6/appersant";
+// @use "--examples--/lesson-7/math";
+// @use "--examples--/lesson-7/bage";
+// @use "--examples--/lesson-9/extend";
+@use "--examples--/lesson-10/mixins";

@@ -133,14 +133,12 @@ meter {
 }
 
 /*===END===*/
-.decoration {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -70%);
-     -moz-transform: translate(-50%, -70%);
-      -ms-transform: translate(-50%, -70%);
-          transform: translate(-50%, -70%);
-  z-index: 100;
-  display: block;
+/* ===== Usage ===== */
+.button {
+  background-color: white;
+  border: 1px solid darkblue;
+}
+.button:not([disabled]):hover {
+  color: white;
+  background-color: darkblue;
 }

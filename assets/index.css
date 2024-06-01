@@ -133,46 +133,15 @@ meter {
 }
 
 /*===END===*/
-.p-8 {
-  padding: 8px;
-}
-
-.p-12 {
-  padding: 12px;
-}
-
-.p-16 {
-  padding: 16px;
-}
-
-.margin-sm {
-  margin: 24px;
-}
-
-.margin-md {
-  margin: 32px;
-}
-
-.margin-lg {
-  margin: 36px;
-}
-
-.margin-xl {
-  margin: 68px;
-}
-
-.fw-400 {
-  font-weight: 400;
-}
-
-.fw-500 {
-  font-weight: 500;
-}
-
-.fw-600 {
+.title {
+  font-size: 20px;
   font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+  text-align: center;
 }
 
-.fw-700 {
-  font-weight: 700;
+.container {
+  width: 1000px;
+  width: 62.5rem;
 }
